@@ -1,0 +1,129 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+
+.page-container {
+    @extend .container-fluid;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    nav {
+        @extend .navbar;
+        @extend .navbar-dark;
+        @extend .bg-dark;
+
+        a {
+            @extend .navbar-brand;
+            img {
+                @extend .d-inline-block;
+                height: 50px;
+                position: relative;
+                top: -6px;
+            }
+        }
+
+        h2 {
+            @extend .d-inline-block;
+            color: silver;
+            //width: 100%;
+            //background-color: black;
+            margin: 0;
+            font-weight: lighter;
+            padding: 20px 0 20px 20px;
+        }
+    }
+
+    .body-container {
+        @extend .container-fluid;
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .page-body {
+        @extend .row;
+        flex: 1;
+
+        aside {
+            background-color: #E9E9E9;
+            padding: 0 30px;
+            h5 {
+                padding: 20px 0;
+            }
+            form {
+                & > div {
+                    @extend .form-group;
+                    @extend .row;
+
+                    & > label {
+                        @extend .col-sm-4;
+                        @extend .col-form-label;
+                        font-size: 15px;
+                    }
+
+                    & > div {
+                        @extend .col-sm-8;
+
+                        input:not([type='checkbox']), textarea {
+                            @extend .form-control;
+                            font-size: 15px;
+                        }
+                    }
+
+                    &.age-verification {
+                        .age-verification-message {
+                            color: darkslategrey;
+                            font-size: 14px;
+                        }
+
+                        & > div {
+                            @extend .offset-sm-4;
+                        }
+                    }
+
+                        }
+                .submit-form {
+                    @extend .offset-sm-4;
+
+                    button {
+                        @extend .btn;
+                        @extend .btn-outline-dark;
+                        @extend .btn-sm;
+                        color: darkred;
+                    }
+                }
+
+            }
+        }
+
+        .main-table {
+            padding: 50px 50px;
+
+            table {
+            @extend .table;
+
+                button {
+                    @extend .btn;
+                    img {
+                      background-color: transparent;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

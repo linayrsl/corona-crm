@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corona CRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="page-container">
+        <nav>
+            <a href="#">
+                <img src="images/corona-logo.svg" />
+                <h2>Corona CRM</h2>
+            </a>
+        </nav>
+        <div class="body-container">
+            <div class="page-body">
+                <aside class="side-menu col-sm-3">
+                    <h5>Create new customer</h5>
+                    <form id="customer-form">
+                        <div class="full-name">
+                            <label for="user-name">Full name</label>
+                            <div>
+                                <input type="text" placeholder="Enter name" id="user-name" name="user-name"/>
+                            </div>
+                            <div class="invalid-feedback">Fullname field is empty or invalid</div>
+                        </div>
+                        <div class="email">
+                            <label for="user-email">Email</label>
+                            <div>
+                                <input type="email" placeholder="Enter email" id="user-email" name="user-email"/>
+                            </div>
+                            <div class="invalid-feedback">Email field is empty or invalid</div>
+                        </div>
+                        <div class="birthdate">
+                            <label for="user-birthdate">Birthdate</label>
+                            <div>
+                                <input type="text" placeholder="dd/mm/yyyy" id="user-birthdate" name="user-birthdate"/>
+                            </div>
+                            <div class="invalid-feedback">Birthdate field is empty or invalid</div>
+                        </div>
+                        <div class="notes">
+                            <label for="user-notes">Notes</label>
+                            <div>
+                                <textarea id="user-notes" placeholder="Enter your notes" name="user-notes"></textarea>
+                            </div>
+                        </div>
+                        <div class="age-verification">
+                            <div>
+                                <input type="checkbox" id="user-checkbox" name="user-checkbox"/>
+                                <label class="age-verification-message" for="user-checkbox">over 18 years old?</label>
+                            </div>
+                            <div class="invalid-feedback">Over 18 checkbox must be checked to proceed</div>
+                        </div>
+                        <div class="submit-form">
+                            <div>
+                                <button type="submit">Create</button>
+                            </div>
+                        </div>
+                    </form>
+                </aside>
+                <div class="main-table col-sm-9">
+                    <table id="customer-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Full name</th>
+                                <th scope="col">Email address</th>
+                                <th scope="col">Birthdate</th>
+                                <th scope="col">Created on</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark Otto</td>
+                                <td>ottoson@gmail.com</td>
+                                <td>23/11/1978</td>
+                                <td>5/3/2020</td>
+                                <td class="action-icons">
+                                    <button type="button" class="create-customer">
+                                        <img class="icon" src="images/edit-alt-regular-24.png">
+                                    </button>
+                                    <button>
+                                        <img class="icon" src="images/bx-trash.svg">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob Thornton</td>
+                                <td>thornton23@hotmail.com</td>
+                                <td>23/12/1981</td>
+                                <td>15/3/2020</td>
+                                <td class="action-icons">
+                                    <button type="button" class="create-customer">
+                                        <img  src="images/edit-alt-regular-24.png">
+                                    </button>
+                                    <button>
+                                        <img src="images/bx-trash.svg">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry Bird</td>
+                                <td>thebird@gmail.com</td>
+                                <td>12/10/1994</td>
+                                <td>15/3/2020</td>
+                                <td class="action-icons">
+                                    <button type="button" class="create-customer">
+                                        <img src="images/edit-alt-regular-24.png">
+                                    </button>
+                                    <button>
+                                        <img src="images/bx-trash.svg">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Ameliya George</td>
+                                <td>ameliya.b@gmail.com</td>
+                                <td>12/10/1968</td>
+                                <td>15/3/2020</td>
+                                <td class="action-icons">
+                                    <button type="button" class="create-customer">
+                                        <img src="images/edit-alt-regular-24.png">
+                                    </button>
+                                    <button>
+                                        <img src="images/bx-trash.svg">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Matt thornee</td>
+                                <td>mattthedemon@gmail.com</td>
+                                <td>12/10/1956</td>
+                                <td>15/3/2020</td>
+                                <td class="action-icons">
+                                    <button type="button" class="create-customer">
+                                        <img src="images/edit-alt-regular-24.png">
+                                    </button>
+                                    <button>
+                                        <img src="images/bx-trash.svg">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
